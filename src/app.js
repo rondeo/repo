@@ -1,9 +1,19 @@
+const http = require('http');
+
 const express = require('express');
+const socketio = require('socket.io');
+
 
 const app = express();
+const server = http.createServer(app);
+const io = socketio.listen(server);
 
-app.use(express.static('public'));
+io.on('connection', socket =>{
+    console.log('New Usuario!');
+})
 
-app.listen(3000, () => {
+app.use(express.static('src/public'));
+
+server.listen(3000, () => {
     console.log('Server on Port 3000');
 });

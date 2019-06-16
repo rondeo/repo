@@ -1,1 +1,1 @@
-console.log("Chat aki!");
+io();
