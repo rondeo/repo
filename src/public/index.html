@@ -2,14 +2,50 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
-    <h4>Pagina de L</h4>
+
+
+    <!--Barra amarilla-->
+    <nav class="navbar navbar-light bg-warning">
+    <a class="nacbar-brand mx-auto" href="/">JavaScript Chat</a>
+    </nav>
+    <!---->
+    <div class="container">
+        <div class="col-md-6 mt-4">
+            <div class="card">
+                <div class="card-header">
+            <g4>let's chat</g4>
+        </div>
+
+        <div id="chat" class="card-body"></div>
+        <form id="message-form" class="card-footer">
+            <div class="input-group">
+                <input type="text" id="message" class="form-control">
+                <div class="input-group-append">
+                    <input type="submit" class="btn btn-warning">
+                </div>
+            </div>
+        </form>
+    </div>
+    </div>
+    </div>
+
+
+
+    <h4></h4>
+    <!--Jquery integration-->
+    <script   src="https://code.jquery.com/jquery-3.4.1.min.js"   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="   crossorigin="anonymous"></script>
+    <!--Sockets-->
     <script src="/socket.io/socket.io.js" charset="utf-8"></script>
+    <!--ESto ya lo entiendo...-->
     <script src="/js/main.js" charset="utf-8"></script>
 </body>
 </html>
